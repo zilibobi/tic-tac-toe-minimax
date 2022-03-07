@@ -167,7 +167,7 @@ local function visualize(showMove)
 		final = string.format("%s%s\n", final, row)
 	end
 
-	return showMove ~= false and final .. string.format("\n\%s turn, You are: %s", currentPlayer == config.ai and "AI's" or "Your", config.player) or final
+	return showMove ~= false and final .. string.format("\n%s turn, You are: %s", currentPlayer == config.ai and "AI's" or "Your", config.player) or final
 end
 
 generate()
